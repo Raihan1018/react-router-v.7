@@ -37,6 +37,12 @@ const Header = () => {
         >
           User2
         </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "text-red-500" : "")}
+          to="/posts"
+        >
+          Posts
+        </NavLink>
       </nav>
     </div>
   );
