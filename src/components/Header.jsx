@@ -6,30 +6,36 @@ const Header = () => {
   return (
     <div>
       <h2>This is header</h2>
-      <nav className="px-5">
+      <nav className="px-5 space-x-6">
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "text-blue-500"
-          }
+          className={({ isActive }) => (isActive ? "text-red-500" : "")}
           to="/"
         >
           Home
         </NavLink>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-red-500" : "")}
           to="/mobiles"
         >
           Mobiles
         </NavLink>
         <NavLink
-          className={({ isActive }) =>
-            isActive ? "text-red-500" : "text-black"
-          }
+          className={({ isActive }) => (isActive ? "text-red-500" : "")}
           to="/laptops"
         >
           Laptop
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "text-red-500" : "")}
+          to="/users"
+        >
+          User
+        </NavLink>
+        <NavLink
+          className={({ isActive }) => (isActive ? "text-red-500" : "")}
+          to="/users2"
+        >
+          User2
         </NavLink>
       </nav>
     </div>
